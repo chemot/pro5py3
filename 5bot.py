@@ -34,7 +34,7 @@ ks.log("Auth Token : " + str(ks.authToken))
 ks.log("Timeline Token : " + str(ks.tl.channelAccessToken))
 
 helpMessage ="""╔═══════════════╗
-         ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰
+         ✰sᴇᴘʀɪʙᴏᴛ✰
 ╚═══════════════╝
 ═════════════════
  ◄]·♦·Menu For Public·♦·[►
@@ -61,7 +61,7 @@ helpMessage ="""╔═══════════════╗
 ╠ Banlist
 ╚════════════════
 ╔═══════════════╗
-         ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰
+         ✰sᴇᴘʀɪʙᴏᴛ✰
 ╚═══════════════╝"""
 
 oepoll = OEPoll(cl)
@@ -73,8 +73,8 @@ Cmid = kc.getProfile().mid
 Dmid = ks.getProfile().mid
 
 Bots=[mid,Amid,Bmid,Cmid,Dmid]
-admin=["ub41f826c5d81c8ead447ee84c43857b1"] 
-owner=["ub41f826c5d81c8ead447ee84c43857b1"]
+admin=["u9f09cfcb17d037e2936b751bd9d40ead"] 
+owner=["u9f09cfcb17d037e2936b751bd9d40ead"]
 whitelist=[""]
 wait = {
     'contact':False,
@@ -84,17 +84,10 @@ wait = {
     'timeline':True,
     'autoAdd':True,
     'message':"""╔════════════╗
-     ✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰
+     ✰sᴇᴘʀɪʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ✰
 ╚════════════╝
 ══════════════
- ◄]·♦·Open Sewa·♦·[►
-╔═════════════
-╠ VPS
-╠ SelfBot
-╠ Bot Protect
-╚═════════════
-Minat?
-http://line.me/ti/p/~iiipuuul""",
+http://line.me/ti/p/~sepriche""",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":False,
@@ -102,11 +95,11 @@ http://line.me/ti/p/~iiipuuul""",
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰",
-    "cName2":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰ ",
-    "cName3":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰ ",
-    "cName4":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰ ",
-    "cName5":"✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰ ",
+    "cName":"✰sᴇᴘʀɪʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ✰",
+    "cName2":"✰sᴇᴘʀɪʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ✰ ",
+    "cName3":"✰sᴇᴘʀɪʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ✰ ",
+    "cName4":"✰sᴇᴘʀɪʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ✰ ",
+    "cName5":"✰sᴇᴘʀɪʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ✰ ",
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -563,7 +556,7 @@ def bot(op):
                   cl.sendText(msg.to,"The stafflist is empty")
               else:
                   cl.sendText(msg.to,"Tunggu...")
-                  mc = "||Admin Ghost Team||\n=====================\n"
+                  mc = "||Admin sᴇᴘʀɪʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ||\n=====================\n"
                   for mi_d in admin:
                       mc += "••>" +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc)
@@ -969,7 +962,7 @@ def bot(op):
                 if wait["autoAdd"] == True: md+="[•]Auto Add [On]\n"
                 else:md+="[•]Auto Add [Off]\n"
                 if wait["commentOn"] == True: md+="[•]Comment [On]\n"
-                else:md+="[•]Comment [Off]\n*============*\n✰ɢʜᴏsᴛ ᴛᴇᴀᴍ✰⭐\n*============*"
+                else:md+="[•]Comment [Off]\n*============*\n✰sᴇᴘʀɪʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ✰⭐\n*============*"
                 cl.sendText(msg.to,md)
             elif "album merit " in msg.text:
                 gid = msg.text.replace("album merit ","")
@@ -1266,7 +1259,7 @@ def bot(op):
 #======================================================================================================#
 #======================================================================================================#
 
-            elif msg.text in ["Kuy"]: #Panggil Semua Bot
+            elif msg.text in ["Masuk"]: #Panggil Semua Bot
               if msg._from in owner:
                 G = cl.getGroup(msg.to)
                 ginfo = cl.getGroup(msg.to)
@@ -1291,7 +1284,7 @@ def bot(op):
 #======================================================================================================#
 #======================================================================================================#
 
-            elif msg.text in ["Kabur all","Kaboor all"]: #Bot Ninggalin Group termasuk Bot Induk
+            elif msg.text in ["Kabur all","Byeall"]: #Bot Ninggalin Group termasuk Bot Induk
               if msg._from in admin:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
@@ -1304,7 +1297,7 @@ def bot(op):
                     except:
                         pass
             
-            elif msg.text in ["Kaboor"]: #Semua Bot Ninggalin Group Kecuali Bot Induk
+            elif msg.text in ["Botbye"]: #Semua Bot Ninggalin Group Kecuali Bot Induk
               if msg._from in admin:
                 if msg.toType == 2:
                     ginfo = cl.getGroup(msg.to)
@@ -1320,7 +1313,7 @@ def bot(op):
 #======================================================================================================#
 #======================================================================================================#
 
-            elif msg.text in ["Tag all","Tagall"]:
+            elif msg.text in ["Sepi","Tagall"]:
             	 if msg._from in admin:
                   group = cl.getGroup(msg.to)
                   nama = [contact.mid for contact in group.members]
@@ -1686,12 +1679,12 @@ def bot(op):
 
             elif msg.text in ["Absen","Absen bot","Absen dulu","Respon"]:
               if msg._from in admin:
-                cl.sendText(msg.to,"Tukang Sayur On")
-                ki.sendText(msg.to,"Tukang Colli On")
-                kk.sendText(msg.to,"Tukang Boker On")
-                kc.sendText(msg.to,"Tukang Becak On")
-                ks.sendText(msg.to,"Tukang Boong")
-                cl.sendText(msg.to,"Semua Udah Hadir Boss\nSiap Protect Group\nAman Gak Aman Yang Penting Anu")
+                cl.sendText(msg.to,"On")
+                ki.sendText(msg.to,"On")
+                kk.sendText(msg.to,"On")
+                kc.sendText(msg.to,"On")
+                ks.sendText(msg.to,"ᴀɴᴛɪᴊs ᴏɴ")
+                cl.sendText(msg.to,"💀\n\n")
 
 #======================================================================================================#
 #======================================================================================================#
@@ -1731,11 +1724,11 @@ def bot(op):
 
             elif msg.text in ["Creator"]:
               msg.contentType = 13
-              msg.contentMetadata = {'mid': 'ued156c86ffa56024c0acba16f7889e6d'}
+              msg.contentMetadata = {'mid': 'u9f09cfcb17d037e2936b751bd9d40ead'}
               cl.sendText(msg.to,"======================")
               cl.sendMessage(msg)
               cl.sendText(msg.to,"======================")
-              cl.sendText(msg.to,"Itu Creator Kami Yang Pea 😜")
+              cl.sendText(msg.to,"ᴄʀᴇᴀᴛᴏʀ ᴋᴀᴍɪ")
 
 #======================================================================================================#
 #======================================================================================================#
